@@ -1,0 +1,88 @@
+{% extends "minimal-layout.html" %}
+
+{% block page_title %}
+  NHS Service finder
+{% endblock %}
+
+{% block content %}
+
+
+
+
+<main id="content" role="main" style="padding-bottom: 0">
+
+<div id="fakephone">
+    <div id="fakephonetitle">
+        <div id="fakephonetitle-a">
+            <a href="phone-finder-filter-list">Back</a>
+        </div>
+
+        <div id="fakephonetitle-b">
+            Time
+        </div>
+
+        <!--<div id="fakephonetitle-c">
+            <a href="phone-finder-glossary">Glossary</a>
+        </div>-->
+
+        <br clear="all">
+
+    </div>
+
+
+        <div id="services" class="">
+
+           <p class="phone-bodytext"><strong>You have selected these {{ selectedservices.length }} services</strong></p>
+
+          
+            
+            <ul class="list phone-list">
+            {% for item in selectedservices %}
+              <li class="multiple-choice">
+                <input id="services-s{{ loop.index }}" type="checkbox" checked name="services" value="{{ item }}">
+
+                <label for="services-s{{ loop.index }}" class="name">{{ item }}</label>
+              </li>
+            {% else %}
+              <li class="multiple-choice">No services were selected</li>
+            {% endfor %}
+            </ul>
+            
+         
+
+          <!-- checkbox code 
+            <li class="multiple-choice">
+              <input id="services-s1" type="checkbox" name="services" value="Acute Assessment unit">
+
+              <label for="services-s1" class="name">Acute Assessment unit</label>
+            -->
+
+         
+
+        </div>
+
+
+        <div>
+            <a href="phone-finder-time"><button class="phonebutton phone-next">Next</button></a>
+        </div>
+
+        <div id="phone-browser-nav">
+          <img id="ios-browser-nav" src="/public/images/spacer.png" border="0" width="480" usemap="#ios-browser-navmap" />
+
+          <map name="ios-browser-navmap" id="ios-browser-navmap">
+            <area alt="" title="back" href="phone-finder-filter-list" shape="rect" coords="0,12,100,80" style="outline:none;" />
+          </map>
+
+        </div>
+
+
+</div>
+
+</main>
+
+
+
+
+{% endblock %}
+
+

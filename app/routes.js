@@ -59,6 +59,26 @@ router.get('/nhslogin', function (req, res) {
   res.render('verify-email')
 })
 
+//at find - postcode ... grabbing location to playback later
+router.get('/location', function (req, res) {
+  var compare = req.query.location
+
+  res.render('phone-finder-gp')
+})
+
+//at find - service select ... grabbing picks to playback later
+router.get('/services', function (req, res) {
+
+  var selectedservices = req.query.services
+console.log(selectedservices)
+
+  res.render('phone-finder-selected', { selectedservices:selectedservices })
+})
+
+
+
+
+
 
 
 module.exports = router

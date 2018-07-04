@@ -30,6 +30,7 @@
     </div>
 
 
+      <form class="form" action="/location" method="get" >
 
         <div id="services" class="">
 
@@ -39,7 +40,9 @@
 
           <div class="phoneinputbox" style="margin-bottom: 2em">
             <h2 class="phone-bodytext">or enter a postcode:</h2>
-            <input class="postcode" placeholder="eg. OX27 7QR or EC1" />
+            <input class="postcode" name="location" placeholder="eg. OX27 7QR or EC1" />
+
+            
           
             <p class="phone-bodytext" id="reported-place"></p>
           </div>
@@ -85,8 +88,12 @@
 
 
         <div>
-            <a href="phone-finder-gp"><button class="phonebutton phone-next">Next</button></a>
+            <input class="phonebutton phone-next" type="submit" value="Next">
+
+            <!--<a href="phone-finder-gp"><button class="phonebutton phone-next">Next</button></a>-->
         </div>
+
+      </form>
 
         <div id="phone-browser-nav">
           <img id="ios-browser-nav" src="/public/images/spacer.png" border="0" width="480" usemap="#ios-browser-navmap" />
