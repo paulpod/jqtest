@@ -455,3 +455,76 @@ border-left: 12px solid #cdf;
 	background-color: #0078fa;
 	border-bottom:#0066d4 4px solid;
 }
+
+
+
+
+.brandedpage {
+
+}
+
+#branded-header {
+	background-color: #005EB8;
+	padding: 10px 5px 5px 10px;
+	margin: -18px -15px 0 -15px;
+	background-image: url('/public/images/nhs-logo-white.svg');
+	background-repeat: no-repeat;
+	background-position: 10px 10px;
+	background-size: 63px;
+	height: 40px;
+}
+#branded-header h1 {
+	color:white;
+	font-weight: 600;
+	line-height: 1.2;
+	text-align: right;
+	padding-right: 0.4em;
+	font-size: 1.3em;
+}
+.splashpage {
+	background-color: transparent;
+	background-image: url('/public/images/splash-banner.jpg');
+	background-repeat: no-repeat;
+	background-position: 0px 10px;
+	background-size: 400px;
+	margin: -18px -15px 0 -15px;
+	padding: 120px 15px 2px 15px;
+
+	&:before {
+    content: '';
+	position: absolute;
+	top: 40px;
+	right: 0;
+	bottom: 447px;
+	left: 0;
+	background-image: linear-gradient(to bottom ,rgba(255,255,255,0.0),rgba(255,255,255,1));
+	
+  }
+}
+.instructions {
+	position: relative;
+	top:0.25em;
+}
+/* for the button icons */
+.introphonebutton {
+	text-align: left;
+	text-indent: 3.5em;
+}
+.introphonebutton#service-search-patient {
+	background-image: url('/public/images/search-service-patient.svg');
+	background-repeat: no-repeat;
+	background-position: 12px 5px;
+	background-size: 48px;
+}
+.introphonebutton#service-search-name {
+	background-image: url('/public/images/search-service-name.svg');
+	background-repeat: no-repeat;
+	background-position: 12px 5px;
+	background-size: 48px;
+}
+.introphonebutton#service-search-location {
+	background-image: url('/public/images/search-service-location.svg');
+	background-repeat: no-repeat;
+	background-position: 12px 5px;
+	background-size: 48px;
+}

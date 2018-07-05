@@ -11,6 +11,8 @@
 
 <main id="content" role="main" style="padding-bottom: 0">
 
+  
+
 <div id="fakephone">
     <div id="fakephonetitle">
         
@@ -25,24 +27,39 @@
     </div>
 
 
-        <div id="searchtypepick" class="">
+        <div id="searchtypepick" class="brandedpage">
 
-          <h2 class="phone-heading">Search</h2>
+          <div id="branded-header">
+            <h1>Service Finder</h1>
 
-          <p class="phone-bodytext">You can search the Directory of Services in these different ways:</p>
+          </div>
+
+          <div class="splashpage">
+            <p class="phone-bodytext">&nbsp;</p>
+          </div>
+
+          <div class="instructions">
+            <p class="phone-bodytext">You can search the Directory of Services in these different ways:</p>
+          </div>
+
+
+
+          <!--<h2 class="phone-heading">Search</h2>-->
+
+          
 
           <div>
-            <a href="phone-finder-filter-list"><button class="introphonebutton phone-secondary">Service search</button></a>
+            <a href="phone-finder-filter-list"><button class="introphonebutton phone-secondary" id="service-search-patient">Service search</button></a>
              <p class="phone-hinttext">Find different types of services, near you or a postcode, that you can refer a patient.</p>
           </div>
 
           <div>
-            <button class="introphonebutton phone-secondary">Search by name</button>
+            <button class="introphonebutton phone-secondary" id="service-search-name">Search by name</button>
             <p class="phone-hinttext">Find the details for a specific service, where you know the name.</p>
           </div>
 
           <div>
-            <a href="phone-browse-location"><button class="introphonebutton phone-secondary">Local area search</button></a>
+            <a href="phone-browse-location"><button class="introphonebutton phone-secondary" id="service-search-location">Local area search</button></a>
             <p class="phone-hinttext">Search and browse all the services near you, no patient required.</p>
           </div>
 
