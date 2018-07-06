@@ -403,8 +403,17 @@ margin-left: 10px;
 	padding:6px;
 	display: inline-block;
 }
-#direct-patient a {
-	padding: 5px 1em;
+.direct-patient-button {
+	background-color: green;
+	border-bottom:#060 4px solid;
+	height: 30px;
+	color: white;
+	padding: 8px 1em;
+	margin: 20px 20px 0 0;
+	font-size: 1em;
+	border-radius: 4px;
+	font-weight: 600;
+	font-size: 1.2em;
 }
 #direct-patient a:hover {
 color: white;
