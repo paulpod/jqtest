@@ -70,9 +70,17 @@ router.get('/location', function (req, res) {
 router.get('/services', function (req, res) {
 
   var selectedservices = req.query.services
-console.log(selectedservices)
+  console.log(selectedservices)
 
-  res.render('phone-finder-selected', { selectedservices:selectedservices })
+  if (selectedservices.length >= 2) {
+    // more than one selected so review the selected items
+    res.render('phone-finder-selected', { selectedservices:selectedservices })
+  } else {
+    // none or one selected so no need to review
+    res.render('phone-finder-time')
+  }
+
+  
 })
 
 

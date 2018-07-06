@@ -35,37 +35,84 @@
           
 
 
-          <p class="phone-bodytext"><strong>How urgently does the patient need to be seen?</strong></p>
+         
+
+          <div class="form-group">
+            <fieldset>
+
+              <legend>
+                 <p class="phone-bodytext"><strong>How quickly is a service required?</strong></p>
+              </legend>
+
+               <ul class="list phone-list" style="">
+                  <li>
+
+              <div class="multiple-choice" data-target="contact-by-email">
+                <input id="it-is-urgent" type="radio" name="radio-urgent-group" value="Yes">
+                <label for="it-is-urgent" style="padding-left: 5px">It is urgent</label>
+              </div>
+              <div class=" js-hidden" id="contact-by-email">
+                
+                <ul class="list phone-list" style="padding-left: 6px;margin: 1em 0 0 3em">
+                  <li class="multiple-choice">
+                    <input id="time-s1" type="radio" name="time" value="1">
+
+                    <label for="time-s1" class="name">1 hour</label>
+                  </li>
+                  <li class="multiple-choice">
+                    <input id="time-s2" type="radio" name="time" value="2">
+
+                    <label for="time-s2" class="name">2 hours</label>
+                  </li>
+                </ul>
+              </div>
+
+            </li>
+
+            <li>
+
+              <div class="multiple-choice" data-target="contact-by-phone">
+                <input id="it-is-not-urgent" type="radio" name="radio-urgent-group" value="No">
+                <label for="it-is-not-urgent" style="padding-left: 5px">It is not urgent</label>
+              </div>
+              <div class=" js-hidden" id="contact-by-phone">
+                
+                <ul class="list phone-list"  style="padding-left: 6px;margin: 1em 0 0 3em">
+                  <li class="multiple-choice">
+                    <input id="time-s3" type="radio" name="time" value="6">
+
+                    <label for="time-s3" class="name">6 hours</label>
+                  </li>
+                  <li class="multiple-choice">
+                    <input id="time-s4" type="radio" name="time" value="12">
+
+                    <label for="time-s4" class="name">12 hours</label>
+                  </li>
+                  <li class="multiple-choice">
+                    <input id="time-s5" type="radio" name="time" value="24">
+
+                    <label for="time-s5" class="name">24 hours</label>
+                  </li>
+                  
+                </ul>
+              </div>
+
+            </li>
+          </ul>
+
+             
+
+            </fieldset>
+          </div>
+
+
+
+
+
           
 
-          <ul class="list phone-list" style="padding-left: 6px">
-            <li class="multiple-choice">
-              <input id="time-s1" type="radio" name="time" value="1">
-
-              <label for="time-s1" class="name">1 hour</label>
-            </li>
-            <li class="multiple-choice">
-              <input id="time-s2" type="radio" name="time" value="2">
-
-              <label for="time-s2" class="name">2 hours</label>
-            </li>
-            <li class="multiple-choice">
-              <input id="time-s3" type="radio" name="time" value="6">
-
-              <label for="time-s3" class="name">6 hours</label>
-            </li>
-            <li class="multiple-choice">
-              <input id="time-s4" type="radio" name="time" value="12">
-
-              <label for="time-s4" class="name">12 hours</label>
-            </li>
-            <li class="multiple-choice">
-              <input id="time-s5" type="radio" name="time" value="24">
-
-              <label for="time-s5" class="name">24 hours</label>
-            </li>
+          
             
-          </ul>
 
         </div>
 

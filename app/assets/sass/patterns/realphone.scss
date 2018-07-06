@@ -505,6 +505,22 @@ border-left: 12px solid #cdf;
 	position: relative;
 	top:0.25em;
 }
+
+#phonetagline {
+	background-color: #ff8;
+	color: #440;
+	position: relative;
+	left: -30px;
+	top:10px;
+	margin: 0 -45px -5px 0;
+	padding: 7px 15px;
+
+}
+
+.results-list a:active li {
+	background-color: #ff8;
+}
+
 /* for the button icons */
 .introphonebutton {
 	text-align: left;
@@ -527,4 +543,7 @@ border-left: 12px solid #cdf;
 	background-repeat: no-repeat;
 	background-position: 12px 5px;
 	background-size: 48px;
+}
+div#services {
+	min-height: 660px;
 }
