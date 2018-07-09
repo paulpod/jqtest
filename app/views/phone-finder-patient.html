@@ -31,6 +31,9 @@
 
     <div id="services" class="">
 
+      <form class="form" action="/patient" method="get" >
+
+
       
       <p class="phone-bodytext"><strong>Patient information</strong></p>
 
@@ -68,6 +71,10 @@
         
       </ul>
 
+   
+
+          <input type="hidden" name="selectedservices" value="{{ data['selectedservices'] }}">
+
 
       <br clear="all">
 
@@ -81,7 +88,12 @@
 
 
         <div>
-            <a href="phone-finder-results"><button class="phonebutton phone-next">Search now</button></a>
+          
+
+
+            <input class="phonebutton phone-next" type="submit" value="Next">
+
+            <!--<a href="phone-finder-results"><button class="phonebutton phone-next">Search now</button></a>-->
         </div>
 
         <div id="phone-browser-nav">

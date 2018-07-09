@@ -38,6 +38,9 @@
          
 
           <div class="form-group">
+
+            <form class="form" action="/time" method="get" >
+
             <fieldset>
 
               <legend>
@@ -55,12 +58,12 @@
                 
                 <ul class="list phone-list" style="padding-left: 6px;margin: 1em 0 0 3em">
                   <li class="multiple-choice">
-                    <input id="time-s1" type="radio" name="time" value="1">
+                    <input id="time-s1" type="radio" name="time" value="1 hour">
 
                     <label for="time-s1" class="name">1 hour</label>
                   </li>
                   <li class="multiple-choice">
-                    <input id="time-s2" type="radio" name="time" value="2">
+                    <input id="time-s2" type="radio" name="time" value="2 hours">
 
                     <label for="time-s2" class="name">2 hours</label>
                   </li>
@@ -79,17 +82,17 @@
                 
                 <ul class="list phone-list"  style="padding-left: 6px;margin: 1em 0 0 3em">
                   <li class="multiple-choice">
-                    <input id="time-s3" type="radio" name="time" value="6">
+                    <input id="time-s3" type="radio" name="time" value="6 hours">
 
                     <label for="time-s3" class="name">6 hours</label>
                   </li>
                   <li class="multiple-choice">
-                    <input id="time-s4" type="radio" name="time" value="12">
+                    <input id="time-s4" type="radio" name="time" value="12 hours">
 
                     <label for="time-s4" class="name">12 hours</label>
                   </li>
                   <li class="multiple-choice">
-                    <input id="time-s5" type="radio" name="time" value="24">
+                    <input id="time-s5" type="radio" name="time" value="24 hours">
 
                     <label for="time-s5" class="name">24 hours</label>
                   </li>
@@ -118,7 +121,9 @@
 
 
         <div>
-            <a href="phone-finder-location"><button class="phonebutton phone-next">Next</button></a>
+            <input class="phonebutton phone-next" type="submit" value="Next">
+
+            <!--<a href="phone-finder-location"><button class="phonebutton phone-next">Next</button></a>-->
         </div>
 
         <div id="phone-browser-nav">

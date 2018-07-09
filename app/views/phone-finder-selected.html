@@ -32,16 +32,20 @@
 
         <div id="services" class="">
 
+          <form class="form" action="/selected" method="get" >
+
+
            <p class="phone-bodytext"><strong>You have selected these {{ selectedservices.length }} services</strong></p>
 
           
             
             <ul class="list phone-list">
+              <input type="hidden" name="servicescount" value="{{ selectedservices.length }}">
             {% for item in selectedservices %}
               <li class="multiple-choice">
-                <input id="services-s{{ loop.index }}" type="checkbox" checked name="services" value="{{ item }}">
+                <input id="services{{ loop.index }}" type="checkbox" checked name="services{{ loop.index }}" value="{{ item }}">
 
-                <label for="services-s{{ loop.index }}" class="name">{{ item }}</label>
+                <label for="services{{ loop.index }}" class="name">{{ item }}</label>
               </li>
             {% else %}
               <li class="multiple-choice">No services were selected</li>
@@ -63,7 +67,9 @@
 
 
         <div>
-            <a href="phone-finder-time"><button class="phonebutton phone-next">Next</button></a>
+          <input class="phonebutton phone-next" type="submit" value="Next">
+          
+          <!--<a href="phone-finder-time"><button class="phonebutton phone-next">Next</button></a>-->
         </div>
 
         <div id="phone-browser-nav">

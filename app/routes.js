@@ -66,10 +66,50 @@ router.get('/location', function (req, res) {
   res.render('phone-finder-gp')
 })
 
+router.get('/selected', function (req, res) {
+  var compare = req.query.selected
+
+  res.render('phone-finder-time')
+})
+
+
+router.get('/time', function (req, res) {
+  var compare = req.query.time
+
+  res.render('phone-finder-location')
+})
+
+
+router.get('/patient', function (req, res) {
+  var compare = req.query.patient
+
+  var selectedservices = req.query.selectedservices
+
+  var str = selectedservices;
+  var selectedservices = str.split(',');
+
+  for(var i = 0; i < selectedservices.length; i++)
+  {
+     console.log(selectedservices[i]);
+  }
+
+  res.render('phone-finder-results', { selectedservices:selectedservices })
+})
+
+
+router.get('/list', function (req, res) {
+  var servicetype = req.query.servicetype
+
+  res.render('phone-finder-results-list', { servicetype:servicetype })
+})
+
+
 //at find - service select ... grabbing picks to playback later
 router.get('/services', function (req, res) {
 
-  var selectedservices = req.query.services
+  var compare = req.query.selectedservices
+  var selectedservices = req.query.selectedservices
+
   console.log(selectedservices)
 
   if (selectedservices.length >= 2) {
