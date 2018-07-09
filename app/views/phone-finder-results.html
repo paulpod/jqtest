@@ -50,8 +50,8 @@
                   no services were selected
                 {% endfor %}
 
-            in <a href="phone-finder-time-edit">{{ data['time'] }}</a>, 
-            within <a href="phone-finder-location-edit">{{ data['distance'] }} miles of {{ data['location'] }}</a>
+            in <a href="phone-finder-time-edit">{{ data['time'] }} hours</a>, 
+            within <a href="phone-finder-location-edit&dist{{ data['distance'] }}=checked">{{ data['distance'] }} miles of {{ data['location'] }}</a>
           </p>
         </form>
 

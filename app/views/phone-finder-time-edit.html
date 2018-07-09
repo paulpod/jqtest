@@ -31,6 +31,7 @@
 
 
         <div id="services" class="">
+          <form class="form" action="/searchagain" method="get" >
 
           <p class="phone-bodytext">How urgently does the patient need to be seen?</p>
           
@@ -68,7 +69,10 @@
 
 
         <div>
-            <a href="phone-finder-results"><button class="phonebutton phone-next">Search again</button></a>
+            <input type="hidden" name="selectedservices" value="{{ data['selectedservices'] }}">
+
+            <input class="phonebutton phone-next" type="submit" value="Search again">
+            <!--<a href="phone-finder-results"><button class="phonebutton phone-next">Search again</button></a>-->
         </div>
 
         <div id="phone-browser-nav">

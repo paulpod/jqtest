@@ -88,10 +88,17 @@ router.get('/patient', function (req, res) {
   var str = selectedservices;
   var selectedservices = str.split(',');
 
-  for(var i = 0; i < selectedservices.length; i++)
-  {
-     console.log(selectedservices[i]);
-  }
+  res.render('phone-finder-results', { selectedservices:selectedservices })
+})
+
+//same as above for returning to the search results
+router.get('/searchagain', function (req, res) {
+  var compare = req.query.searchagain
+
+  var selectedservices = req.query.selectedservices
+
+  var str = selectedservices;
+  var selectedservices = str.split(',');
 
   res.render('phone-finder-results', { selectedservices:selectedservices })
 })
