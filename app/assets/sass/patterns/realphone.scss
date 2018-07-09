@@ -118,7 +118,20 @@ body {
 	background-color: #0078fa;
 	border-bottom:4px solid #0066d4;
 }
-
+.phone-findloc {
+	height: 45px;
+	color: white;
+	width: 85px;
+	border: none;
+	font-size: 1.2em;
+	font-weight: 600;
+	border-radius: 6px;
+	background-color: #0078fa;
+	border-bottom:4px solid #0066d4;
+	position: relative;
+	top:-2px;
+	margin-right: -10px;
+}
 
 .phone-list {
 	//height: 640px;
@@ -195,9 +208,19 @@ h3.glossary-title {
 	text-decoration: none;
 	background-image: url('/public/images/location-arrow-blue.svg');
 	background-repeat: no-repeat;
-	background-size: 21px;
+	background-size: 20px;
 	padding-left: 1.6em;
 }
+#dislocate {
+	text-decoration: none;
+	background-image: url('/public/images/location-arrow-outline.svg');
+	background-repeat: no-repeat;
+	background-size: 20px;
+	padding-left: 1.6em;
+}
+
+
+
 input#gp-picker {
 	padding:5px;
 	width: 330px;

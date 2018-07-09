@@ -63,6 +63,13 @@ router.get('/nhslogin', function (req, res) {
 router.get('/location', function (req, res) {
   var compare = req.query.location
 
+  res.render('phone-finder-location-confirm')
+})
+
+//at find - postcode ... grabbing location to playback later
+router.get('/location-confirm', function (req, res) {
+  var compare = req.query.location
+
   res.render('phone-finder-gp')
 })
 
