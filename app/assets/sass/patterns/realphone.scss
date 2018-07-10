@@ -133,7 +133,8 @@ body {
 	margin-right: -10px;
 }
 
-.phone-list {
+#gplist {
+	background-color: yellow;
 	//height: 640px;
 	//overflow: scroll;
 }
@@ -553,6 +554,8 @@ border-left: 12px solid #cdf;
 	background-color: #ff8;
 }
 
+
+
 /* for the button icons */
 .introphonebutton {
 	text-align: left;
@@ -579,3 +582,4 @@ border-left: 12px solid #cdf;
 div#services {
 	min-height: 660px;
 }
+

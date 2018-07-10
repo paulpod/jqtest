@@ -31,49 +31,27 @@
 
     <div id="services" class="">
 
-      <form class="form" action="/patient" method="get" >
+      <form class="form" action="/hasgp" method="get" >
+
+      <p class="phone-bodytext"><strong>Patient information </strong></p>
 
 
-      
-      <p class="phone-bodytext"><strong>Patient information (optional)</strong></p>
-
-
-    <div id="phone-age">
-      <p class="phone-bodytext" style="margin-bottom: 12px">Patient age <!--(optional)--></p>
-
-      <input class="form-control" name="age" type="tel" id="age" size="3" maxlength="3" style="padding:8px;width:5em">
-    </div>
-
-
-    
-
-
-      <p class="phone-bodytext">Patient gender <!--(optional)--></p>
-      
 
       <ul class="list phone-list" style="padding-left: 6px">
         <li class="multiple-choice">
-          <input id="gender-s1" type="radio" name="gender" value="f">
+          <input id="hasgp-s1" type="radio" name="hasgp" value="no">
 
-          <label for="gender-s1" class="name">Female</label>
+          <label for="hasgp-s1" class="name">GP not known, or no GP</label>
         </li>
         <li class="multiple-choice">
-          <input id="gender-s2" type="radio" name="gender" value="m">
+          <input id="hasgp-s2" type="radio" name="hasgp" value="yes">
 
-          <label for="gender-s2" class="name">Male</label>
+          <label for="hasgp-s2" class="name">Patient has a GP</label>
         </li>
-        <li class="multiple-choice">
-          <input id="gender-s3" type="radio" name="gender" value="o">
 
-          <label for="gender-s3" class="name">Other</label>
-        </li>
-   
-        
-      </ul>
 
-   
 
-          <input type="hidden" name="selectedservices" value="{{ data['selectedservices'] }}">
+     
 
 
       <br clear="all">

@@ -86,6 +86,25 @@ router.get('/time', function (req, res) {
   res.render('phone-finder-location')
 })
 
+router.get('/hasgp', function (req, res) {
+  var hasgp = req.query.hasgp
+
+
+if (hasgp == 'yes') {
+  res.render('phone-finder-gp-list')
+} else {
+  res.render('phone-finder-patient')
+}
+
+})
+
+
+router.get('/gplist', function (req, res) {
+  var compare = req.query.selectedgp
+
+  res.render('phone-finder-patient')
+})
+
 
 router.get('/patient', function (req, res) {
   var compare = req.query.patient
