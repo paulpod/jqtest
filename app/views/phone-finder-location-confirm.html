@@ -30,7 +30,7 @@
     </div>
 
 
-      <form class="form" action="/location-confirm" method="get" >
+      
 
         <div id="services" class="">
 
@@ -40,7 +40,7 @@
 
           <div class="phoneinputbox" style="margin-bottom: 2em">
             <h2 class="phone-bodytext">or enter a postcode:</h2>
-            <input class="postcode" name="location" value="{{ data['location'] }}" style="width: 220px;padding-left: 10px;text-transform: uppercase;" />
+            <input class="postcode" name="location" placeholder="{{ data['location'] }}" style="width: 260px;padding-left: 10px;text-transform: uppercase;" />
 
             <a href="phone-finder-location-confirm"><button class="phone-findloc">Find</button></a>
 
@@ -50,6 +50,8 @@
 
 
           </div>
+
+          <form class="form" action="/location-confirm" method="get" >
 
           <p class="phone-bodytext">How far to search?</p>
           

@@ -4,20 +4,20 @@
 	border-radius: 20px;
 	border: solid black 40px;
 	max-width: 480px;
-	background-image: url('/public/images/ios-topbar.png');
+	background-image: url('/public/images/ios-browser-address-bar-fullsize.png');
 	background-repeat: no-repeat;
 	background-size: 480px;
 	height: 850px;
 	overflow: hidden;
 }
 #fakephonetitle {
-	margin-top:30px;
-	background-color: #f7f7f7;
+	margin-top:32px;
 	font-size: 1.2em;
-	border-bottom: 1px solid #bbb;
+	//border-bottom: 1px solid #bbb;
 	padding: 8px 10px 14px 5px;
 }
 #fakephonetitle-a {
+	display: none;
 	width:108px;
 	float: left;
 	text-align: left;
@@ -28,15 +28,18 @@
 }
 
 #fakephonetitle-a a, #fakephonetitle-c a {
+
 	text-decoration: none;
 	color: #007aff;
 }
 #fakephonetitle-c {
+	display: none;
 	width:85px;
 	float: right;
 	text-align: right;
 }
 #fakephonetitle-b {
+	display: none;
 	width:200px;
 	float: left;
 	font-weight: 600;
@@ -75,7 +78,8 @@
 }
 
 .phonebutton, .phone-next {
-	
+		position: fixed;
+
 	
 	height: 60px;
 	color: white;
@@ -99,7 +103,20 @@
 	background-color: #0078fa;
 	border-bottom:4px solid #0066d4;
 }
-
+.phone-findloc {
+	height: 45px;
+	color: white;
+	width: 125px;
+	border: none;
+	font-size: 1.2em;
+	font-weight: 600;
+	border-radius: 6px;
+	background-color: #0078fa;
+	border-bottom:4px solid #0066d4;
+	position: relative;
+	top:-2px;
+	margin-right: -10px;
+}
 
 .phone-list {
 	height: 640px;
@@ -264,24 +281,15 @@ li.result p {
 	margin: 0;
 }
 .open-now {
-	display: inline-block;
-	background-color: #ee3;
-	border:1px solid #ac3;
 	font-weight: 600;
-	border-radius: 13px;
-	width: 96px;
-	height:24px;
-	text-align: center;
-	position: relative;
-	left:120px;
-	color: #060;
+	color: #080;
 	font-size: 16px;
 	line-height: 1.5;
 }
 
 .result-distance {
 	display: inline-block;
-	width: 200px;
+	width: 100px;
 	font-weight: 600;
 }
 
@@ -433,4 +441,118 @@ border-left: 12px solid #cdf;
 	border-radius: 4px;
 	background-color: #0078fa;
 	border-bottom:#0066d4 4px solid;
+}
+
+
+
+
+
+#locate {
+	text-decoration: none;
+	background-image: url('/public/images/location-arrow-blue.svg');
+	background-repeat: no-repeat;
+	background-size: 20px;
+	padding-left: 1.6em;
+}
+#dislocate {
+	text-decoration: none;
+	background-image: url('/public/images/location-arrow-outline.svg');
+	background-repeat: no-repeat;
+	background-size: 20px;
+	padding-left: 1.6em;
+}
+
+
+
+
+
+
+
+.brandedpage {
+
+}
+/* special case for the buttons on the front screen, sigh */
+.introphonebutton {
+	height: 50px;
+	color: white;
+	width: 420px;
+	border: none;
+	font-size: 1.4em;
+	font-weight: 600;
+	border-radius: 4px;
+	margin: 10px 0 5px 30px;
+}
+
+
+#branded-header {
+	background-color: #005EB8;
+	padding: 10px 5px 5px 10px;
+	margin: 8px -15px 0 0;
+	background-image: url('/public/images/nhs-logo-white.svg');
+	background-repeat: no-repeat;
+	background-position: 10px 10px;
+	background-size: 63px;
+	height: 40px;
+}
+#branded-header h1 {
+	color:white;
+	font-weight: 600;
+	line-height: 1.2;
+	text-align: right;
+	padding-right: 1em;
+	font-size: 1.3em;
+}
+.splashpage {
+	background-color: transparent;
+	background-image: url('/public/images/splash-banner.jpg');
+	background-repeat: no-repeat;
+	background-position: 15px 10px;
+	background-size: 480px;
+	margin: -18px -15px 0 -15px;
+	padding: 120px 15px 0 15px;
+}
+.instructions {
+	position: relative;
+}
+
+#phonetagline {
+	
+
+}
+
+.results-list a:active li {
+	background-color: #ff8;
+}
+
+
+
+/* for the button icons */
+.introphonebutton {
+	text-align: left;
+	text-indent: 3.5em;
+}
+.introphonebutton#service-search-patient {
+	background-image: url('/public/images/search-service-patient.svg');
+	background-repeat: no-repeat;
+	background-position: 12px 5px;
+	background-size: 48px;
+}
+.introphonebutton#service-search-name {
+	background-image: url('/public/images/search-service-name.svg');
+	background-repeat: no-repeat;
+	background-position: 12px 5px;
+	background-size: 48px;
+}
+.introphonebutton#service-search-location {
+	background-image: url('/public/images/search-service-location.svg');
+	background-repeat: no-repeat;
+	background-position: 12px 5px;
+	background-size: 48px;
+}
+div#services {
+	min-height: 660px;
+}
+#reported-place {
+	position: relative;
+	left: 1.5em;
 }

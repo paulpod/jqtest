@@ -70,7 +70,7 @@ router.get('/location', function (req, res) {
 router.get('/location-confirm', function (req, res) {
   var compare = req.query.location
 
-  res.render('phone-finder-gp')
+  res.render('phone-finder-patient-hasgp')
 })
 
 router.get('/selected', function (req, res) {
