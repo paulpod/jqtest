@@ -81,7 +81,7 @@ router.get('/selected', function (req, res) {
 
 
 router.get('/time', function (req, res) {
-  var compare = req.query.time
+  var compare = req.query.urgency
 
   res.render('phone-finder-location')
 })
